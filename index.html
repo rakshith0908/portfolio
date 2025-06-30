@@ -401,7 +401,7 @@
                     <!-- Video Preview Container for Instagram Video -->
                     <div id="instagram-preview-container" class="relative w-full h-0 pb-[177.77%] overflow-hidden border-b border-white/10 group cursor-pointer">
                         <video preload="metadata" muted loop playsinline
-                               src="https://github.com/August4599/webite/raw/refs/heads/main/WhatsApp%20Video%202025-06-21%20at%209.24.05%20PM.mp4#t=1"
+                               src="https://rakshith0908.github.io/portfolio/insta.mp4#t=1"
                                poster="https://placehold.co/600x1067/111111/EEEEEE?text=%E2%96%B6%EF%B8%8F+Instagram+Reel"
                                class="absolute top-0 left-0 w-full h-full object-cover">
                             Your browser does not support the video tag.
@@ -557,7 +557,7 @@
 
         // Video URLs (Replace with your actual video URLs)
         const weddingVideoUrl = "https://www.w3schools.com/html/mov_bbb.mp4"; // Using a reliable test MP4
-        const instagramVideoUrl = "https://github.com/August4599/webite/raw/refs/heads/main/WhatsApp%20Video%202025-06-21%20at%209.24.05%20PM.mp4"; // Updated Instagram video URL
+        const instagramVideoUrl = "https://rakshith0908.github.io/portfolio/insta.mp4"; // Updated Instagram video URL
 
         // Function to open a generic modal
         function openVideoModal(modalElement, videoPlayerElement, videoUrl) {
@@ -597,7 +597,7 @@
                 weddingPreviewContainer.addEventListener('mouseenter', () => {
                     weddingPreviewVideo.play().catch(error => { /* Autoplay might be blocked, catch error */ });
                 });
-                weddingPreviewContainer.addEventListener('mouseleave', () => {
+                weddingPreviewVideo.addEventListener('mouseleave', () => {
                     weddingPreviewVideo.pause();
                     weddingPreviewVideo.currentTime = 0; // Reset to beginning
                 });
@@ -621,10 +621,10 @@
             // Handle hover for preview video
             const instagramPreviewVideo = instagramPreviewContainer.querySelector('video');
             if (instagramPreviewVideo) {
-                instagramPreviewContainer.addEventListener('mouseenter', () => {
+                instagramPreviewVideo.addEventListener('mouseenter', () => {
                     instagramPreviewVideo.play().catch(error => { /* Autoplay might be blocked, catch error */ });
                 });
-                instagramPreviewContainer.addEventListener('mouseleave', () => {
+                instagramPreviewVideo.addEventListener('mouseleave', () => {
                     instagramPreviewVideo.pause();
                     instagramPreviewVideo.currentTime = 0; // Reset to beginning
                 });
