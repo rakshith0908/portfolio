@@ -360,11 +360,23 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
                 <!-- Short Film Project -->
                 <div class="rounded-xl overflow-hidden border-l-4 border-transparent portfolio-item glassmorphic-card">
-                    <img src="https://placehold.co/600x350/111111/EEEEEE?text=%E2%96%B6%EF%B8%8F+Short+Film" alt="Short Film Thumbnail" class="w-full h-auto object-cover border-b border-white/10">
+                    <!-- Video Preview Container for Short Film Video -->
+                    <div id="short-film-preview-container" class="relative w-full h-0 pb-[56.25%] overflow-hidden border-b border-white/10 group cursor-pointer">
+                        <video preload="metadata" muted loop playsinline
+                               src="https://rakshith0908.github.io/portfolio/short.mp4#t=1"
+                               poster="https://placehold.co/600x350/111111/EEEEEE?text=%E2%96%B6%EF%B8%8F+Short+Film"
+                               class="absolute top-0 left-0 w-full h-full object-cover">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Play icon overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
                     <div class="p-10">
-                        <h3 class="text-3xl font-semibold mb-4">Captivating Short Film</h3>
+                        <h3 class="text-3xl font-semibold mb-4">Short Film Project</h3>
                         <p class="text-gray-300 text-base mb-8">An emotionally resonant short film showcasing narrative editing, nuanced color grading, and compelling sound design.</p>
-                        <a href="#" class="text-red-accent hover:underline font-medium text-base inline-flex items-center group">
+                        <a href="#" id="open-short-film-video-modal" class="text-red-accent hover:underline font-medium text-base inline-flex items-center group">
                             Watch Video
                             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </a>
@@ -376,7 +388,7 @@
                     <!-- Video Preview Container for Wedding Video -->
                     <div id="wedding-preview-container" class="relative w-full h-0 pb-[56.25%] overflow-hidden border-b border-white/10 group cursor-pointer">
                         <video preload="metadata" muted loop playsinline
-                               src="https://www.w3schools.com/html/mov_bbb.mp4#t=1"
+                               src="https://rakshith0908.github.io/portfolio/wedding.mp4#t=1"
                                poster="https://placehold.co/600x350/111111/EEEEEE?text=%E2%96%B6%EF%B8%8F+Wedding+Film"
                                class="absolute top-0 left-0 w-full h-full object-cover">
                             Your browser does not support the video tag.
@@ -387,7 +399,7 @@
                         </div>
                     </div>
                     <div class="p-10">
-                        <h3 class="text-3xl font-semibold mb-4">Timeless Wedding Story</h3>
+                        <h3 class="text-3xl font-semibold mb-4">Wedding Film Project</h3>
                         <p class="text-gray-300 text-base mb-8">Crafting a beautiful and memorable wedding video, preserving precious moments with elegant transitions and heartfelt storytelling.</p>
                         <a href="#" id="open-wedding-video-modal" class="text-red-accent hover:underline font-medium text-base inline-flex items-center group">
                             Watch Video
@@ -455,12 +467,6 @@
                     <p class="text-gray-300 text-base">Ability to clean audio, create immersive soundscapes, and mix audio tracks for optimal clarity and impact.</p>
                 </div>
 
-                <!-- Skill Card: Color Grading -->
-                <div class="rounded-xl border-l-4 border-transparent text-center skill-item glassmorphic-card p-10">
-                    <h3 class="text-3xl font-bold mb-5 text-red-accent">Advanced Color Grading</h3>
-                    <p class="text-gray-300 text-base">Proficient in color correction, creative grading, and achieving cinematic looks to enhance visual storytelling.</p>
-                </div>
-
                 <!-- Skill Card: Storytelling -->
                 <div class="rounded-xl border-l-4 border-transparent text-center skill-item glassmorphic-card p-10">
                     <h3 class="text-3xl font-bold mb-5 text-red-accent">Visual Storytelling</h3>
@@ -507,6 +513,20 @@
         </div>
     </footer>
 
+    <!-- Short Film Video Modal -->
+    <div id="short-film-video-modal" class="modal-overlay">
+        <div class="modal-content glassmorphic-card">
+            <button id="close-short-film-video-modal" class="modal-close">
+                &times;
+            </button>
+            <div class="video-container">
+                <video id="short-film-video-player" controls preload="auto" playsinline>
+                    <!-- Video will be loaded here by JavaScript -->
+                </video>
+            </div>
+        </div>
+    </div>
+
     <!-- Wedding Video Modal -->
     <div id="wedding-video-modal" class="modal-overlay">
         <div class="modal-content glassmorphic-card">
@@ -533,9 +553,17 @@
                 </video>
             </div>
         </div>
-    </div>
+    </div >
 
     <script>
+        // Get elements for Short Film Video Modal
+        const openShortFilmVideoModalBtn = document.getElementById('open-short-film-video-modal');
+        const shortFilmVideoModal = document.getElementById('short-film-video-modal');
+        const closeShortFilmVideoModalBtn = document.getElementById('close-short-film-video-modal');
+        const shortFilmVideoPlayer = document.getElementById('short-film-video-player');
+        const shortFilmPreviewContainer = document.getElementById('short-film-preview-container'); // Get the preview container
+
+
         // Get elements for Wedding Video Modal
         const openWeddingVideoModalBtn = document.getElementById('open-wedding-video-modal');
         const weddingVideoModal = document.getElementById('wedding-video-modal');
@@ -556,7 +584,8 @@
         const mobileNav = document.getElementById('mobile-nav');
 
         // Video URLs (Replace with your actual video URLs)
-        const weddingVideoUrl = "https://www.w3schools.com/html/mov_bbb.mp4"; // Using a reliable test MP4
+        const shortFilmVideoUrl = "https://rakshith0908.github.io/portfolio/short.mp4";
+        const weddingVideoUrl = "https://rakshith0908.github.io/portfolio/wedding.mp4"; // Updated Wedding video URL
         const instagramVideoUrl = "https://rakshith0908.github.io/portfolio/insta.mp4"; // Updated Instagram video URL
 
         // Function to open a generic modal
@@ -578,6 +607,32 @@
             videoPlayerElement.load(); // Unload the video to release resources
         }
 
+        // Event listener for opening Short Film Video Modal (from "Watch Video" link)
+        if (openShortFilmVideoModalBtn) {
+            openShortFilmVideoModalBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent default link behavior
+                openVideoModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
+            });
+        }
+
+        // Event listener for opening Short Film Video Modal (from clicking the preview)
+        if (shortFilmPreviewContainer) {
+            shortFilmPreviewContainer.addEventListener('click', () => {
+                openVideoModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
+            });
+            // Handle hover for preview video
+            const shortFilmPreviewVideo = shortFilmPreviewContainer.querySelector('video');
+            if (shortFilmPreviewVideo) {
+                shortFilmPreviewVideo.addEventListener('mouseenter', () => {
+                    shortFilmPreviewVideo.play().catch(error => { /* Autoplay might be blocked, catch error */ });
+                });
+                shortFilmPreviewVideo.addEventListener('mouseleave', () => {
+                    shortFilmPreviewVideo.pause();
+                    shortFilmPreviewVideo.currentTime = 0; // Reset to beginning
+                });
+            }
+        }
+
         // Event listener for opening Wedding Video Modal (from "Watch Video" link)
         if (openWeddingVideoModalBtn) {
             openWeddingVideoModalBtn.addEventListener('click', (e) => {
@@ -594,7 +649,7 @@
             // Handle hover for preview video
             const weddingPreviewVideo = weddingPreviewContainer.querySelector('video');
             if (weddingPreviewVideo) {
-                weddingPreviewContainer.addEventListener('mouseenter', () => {
+                weddingPreviewVideo.addEventListener('mouseenter', () => {
                     weddingPreviewVideo.play().catch(error => { /* Autoplay might be blocked, catch error */ });
                 });
                 weddingPreviewVideo.addEventListener('mouseleave', () => {
@@ -631,6 +686,18 @@
             }
         }
 
+        // Event listeners for closing Short Film Video Modal
+        if (closeShortFilmVideoModalBtn) {
+            closeShortFilmVideoModalBtn.addEventListener('click', () => closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer));
+        }
+        if (shortFilmVideoModal) {
+            shortFilmVideoModal.addEventListener('click', (e) => {
+                if (e.target === shortFilmVideoModal) {
+                    closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer);
+                }
+            });
+        }
+
         // Event listeners for closing Wedding Video Modal
         if (closeWeddingVideoModalBtn) {
             closeWeddingVideoModalBtn.addEventListener('click', () => closeVideoModal(weddingVideoModal, weddingVideoPlayer));
@@ -658,6 +725,9 @@
         // Close any active modal on escape key press
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
+                if (shortFilmVideoModal.classList.contains('is-active')) {
+                    closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer);
+                }
                 if (weddingVideoModal.classList.contains('is-active')) {
                     closeVideoModal(weddingVideoModal, weddingVideoPlayer);
                 }
