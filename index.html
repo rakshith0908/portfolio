@@ -8,45 +8,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (for resume infographic) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #100000; /* Very dark red as main background */
-            color: #FFFFFF; /* Pure White for primary text */
-            line-height: 1.6;
-            scroll-behavior: smooth; /* Smooth scrolling for navigation */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            position: relative; /* Needed for absolute positioning of grid */
+            background-color: #0A0000; /* Even darker, almost black-red for deeper premium feel */
+            color: #F0F0F0; /* Slightly off-white for softer contrast */
+            line-height: 1.7; /* Slightly increased line height for readability */
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            position: relative;
         }
         /* Neon animation for red accents (color change + glow) - FASTER with MORE VARIETY */
         @keyframes neon-glow {
             0%, 100% {
                 color: #FF0000; /* Pure Red */
-                text-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.4);
+                text-shadow: 0 0 6px rgba(255, 0, 0, 0.6), 0 0 12px rgba(255, 0, 0, 0.5); /* Slightly stronger glow */
             }
             15% {
                 color: #FF4500; /* Orange-Red */
-                text-shadow: 0 0 8px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.5);
+                text-shadow: 0 0 9px rgba(255, 69, 0, 0.7), 0 0 18px rgba(255, 69, 0, 0.6);
             }
             30% {
                 color: #FF8C00; /* Dark Orange */
-                text-shadow: 0 0 8px rgba(255, 140, 0, 0.6), 0 0 15px rgba(255, 140, 0, 0.5);
+                text-shadow: 0 0 9px rgba(255, 140, 0, 0.7), 0 0 18px rgba(255, 140, 0, 0.6);
             }
             45% {
                 color: #FF69B4; /* Hot Pink */
-                text-shadow: 0 0 8px rgba(255, 105, 180, 0.6), 0 0 15px rgba(255, 105, 180, 0.5);
+                text-shadow: 0 0 9px rgba(255, 105, 180, 0.7), 0 0 18px rgba(255, 105, 180, 0.6);
             }
             60% {
                 color: #FF007F; /* Rose */
-                text-shadow: 0 0 8px rgba(255, 0, 127, 0.6), 0 0 15px rgba(255, 0, 127, 0.5);
+                text-shadow: 0 0 9px rgba(255, 0, 127, 0.7), 0 0 18px rgba(255, 0, 127, 0.6);
             }
             75% {
                 color: #DC143C; /* Crimson */
-                text-shadow: 0 0 8px rgba(220, 20, 60, 0.6), 0 0 15px rgba(220, 20, 60, 0.5);
+                text-shadow: 0 0 9px rgba(220, 20, 60, 0.7), 0 0 18px rgba(220, 20, 60, 0.6);
             }
             90% {
                 color: #E60026; /* Slightly brighter red */
-                text-shadow: 0 0 5px rgba(230, 0, 38, 0.5), 0 0 10px rgba(230, 0, 38, 0.4);
+                text-shadow: 0 0 6px rgba(230, 0, 38, 0.6), 0 0 12px rgba(230, 0, 38, 0.5);
             }
         }
 
@@ -54,57 +56,56 @@
         @keyframes neon-bg-glow {
             0%, 100% {
                 background-color: #FF0000; /* Pure Red */
-                box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.4);
+                box-shadow: 0 0 6px rgba(255, 0, 0, 0.6), 0 0 12px rgba(255, 0, 0, 0.5);
             }
             15% {
                 background-color: #FF4500; /* Orange-Red */
-                box-shadow: 0 0 8px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.5);
+                box-shadow: 0 0 9px rgba(255, 69, 0, 0.7), 0 0 18px rgba(255, 69, 0, 0.6);
             }
             30% {
                 background-color: #FF8C00; /* Dark Orange */
-                box-shadow: 0 0 8px rgba(255, 140, 0, 0.6), 0 0 15px rgba(255, 140, 0, 0.5);
+                box-shadow: 0 0 9px rgba(255, 140, 0, 0.7), 0 0 18px rgba(255, 140, 0, 0.6);
             }
             45% {
                 background-color: #FF69B4; /* Hot Pink */
-                box-shadow: 0 0 8px rgba(255, 105, 180, 0.6), 0 0 15px rgba(255, 105, 180, 0.5);
+                box-shadow: 0 0 9px rgba(255, 105, 180, 0.7), 0 0 18px rgba(255, 105, 180, 0.6);
             }
             60% {
                 background-color: #FF007F; /* Rose */
-                box-shadow: 0 0 8px rgba(255, 0, 127, 0.6), 0 0 15px rgba(255, 0, 127, 0.5);
+                box-shadow: 0 0 9px rgba(255, 0, 127, 0.7), 0 0 18px rgba(255, 0, 127, 0.6);
             }
             75% {
                 background-color: #DC143C; /* Crimson */
-                box-shadow: 0 0 8px rgba(220, 20, 60, 0.6), 0 0 15px rgba(220, 20, 60, 0.5);
+                box-shadow: 0 0 9px rgba(220, 20, 60, 0.7), 0 0 18px rgba(220, 20, 60, 0.6);
             }
             90% {
                 background-color: #E60026; /* Slightly brighter red */
-                box-shadow: 0 0 5px rgba(230, 0, 38, 0.5), 0 0 10px rgba(230, 0, 38, 0.4);
+                box-shadow: 0 0 6px rgba(230, 0, 38, 0.6), 0 0 12px rgba(230, 0, 38, 0.5);
             }
         }
 
 
         .text-red-accent {
             color: #DC2626; /* Default red */
-            animation: neon-glow 6s infinite alternate ease-in-out; /* Adjusted to 6s for smoother, faster cycling */
+            animation: neon-glow 6s infinite alternate ease-in-out;
         }
         .bg-red-accent {
             background-color: #DC2626; /* Default red */
-            animation: neon-bg-glow 6s infinite alternate ease-in-out; /* Adjusted to 6s for smoother, faster cycling */
+            animation: neon-bg-glow 6s infinite alternate ease-in-out;
         }
-        /* Border-red-accent won't animate color directly, but will use base red */
         .border-red-accent {
-            border-color: #DC2626; /* A strong red accent */
+            border-color: #DC2626;
         }
         /* Custom scrollbar for a cleaner look */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #080000; /* Dark red track */
+            background: #080000;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #330000; /* Slightly lighter red thumb */
+            background: #330000;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
@@ -118,7 +119,7 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
         }
 
         /* New CSS for Instagram style video (9:16 aspect ratio) */
@@ -128,7 +129,7 @@
             padding-bottom: 177.77%; /* 9:16 Aspect Ratio (16/9 * 100%) */
             height: 0;
             overflow: hidden;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
         }
 
         .video-container iframe,
@@ -145,68 +146,73 @@
 
         /* Glassmorphism Effect */
         .glassmorphic-card {
-            background-color: rgba(255, 255, 255, 0.03); /* Translucent white over dark red background */
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px); /* For Safari support */
-            border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle white border */
-            border-radius: 0.75rem; /* slightly more rounded corners for premium feel */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Very subtle dark shadow for depth */
+            background-color: rgba(255, 255, 255, 0.05); /* Slightly more opaque for better depth */
+            backdrop-filter: blur(15px); /* Increased blur for more pronounced effect */
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Slightly more visible border */
+            border-radius: 1rem; /* More rounded corners for a softer, premium look */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger, diffused shadow for depth */
         }
 
         /* Section dividers with subtle white tint */
         .section-divider-border {
-            border-color: rgba(255, 255, 255, 0.08); /* Very subtle white border */
+            border-color: rgba(255, 255, 255, 0.15); /* More visible divider */
         }
 
         /* Further minimal adjustments for a premium feel */
         .section-heading {
-            letter-spacing: 0.06em; /* Slightly wider letter spacing for headings */
-            font-weight: 700; /* Ensure headings are bold */
+            letter-spacing: 0.08em; /* Increased letter spacing for headings */
+            font-weight: 700;
+            text-transform: uppercase; /* Uppercase for headings */
         }
         .portfolio-item, .skill-item {
-            transition: all 0.3s ease-in-out;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother, more elegant transition */
         }
         .portfolio-item:hover, .skill-item:hover {
-            transform: translateY(-0.35rem); /* Slightly more pronounced lift on hover */
-            border-color: #DC2626; /* Red accent on hover for the whole card */
-            box-shadow: 0 5px 20px rgba(220, 38, 38, 0.2); /* Subtle red glow on hover */
+            transform: translateY(-0.5rem) scale(1.02); /* More pronounced lift and slight scale */
+            border-color: #FF0000; /* Pure red on hover */
+            box-shadow: 0 8px 30px rgba(255, 0, 0, 0.3); /* Stronger red glow on hover */
         }
-        /* Override specific border for glassmorphic cards to be consistent */
         .portfolio-item, .skill-item {
-             border-left-width: 4px; /* Ensure left border exists for the hover effect */
+             border-left-width: 4px;
         }
         /* Premium button hover effect with gradient */
         .premium-button {
             transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(220, 38, 38, 0.4); /* Initial subtle shadow */
+            letter-spacing: 0.05em; /* Slight letter spacing for buttons */
         }
         .premium-button:hover {
-            background-image: linear-gradient(to right, #CC0000, #AA0000); /* Darker red gradient on hover */
-            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.6); /* More prominent shadow/glow */
-            animation: none; /* Disable neon animation on hover for a direct effect */
+            background-image: linear-gradient(to right, #E60026, #CC0000); /* Brighter red gradient on hover */
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.7); /* More prominent shadow/glow */
+            transform: translateY(-2px) scale(1.02); /* Slight lift and scale on hover */
+            animation: none;
         }
         .wip-tag {
-            background-color: #DC2626; /* Static red, animation won't apply to this specific class directly for simplicity */
-            color: #000000;
-            font-size: 0.65rem; /* Smaller font size */
+            background-color: #FFD700; /* Gold color for WIP tag */
+            color: #1A1A1A; /* Dark text for contrast */
+            font-size: 0.7rem;
             font-weight: 700;
-            padding: 0.2rem 0.5rem;
-            border-radius: 0.25rem;
-            margin-left: 0.75rem; /* Spacing from the title */
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.35rem; /* Slightly more rounded */
+            margin-left: 0.8rem;
             vertical-align: middle;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            line-height: 1; /* Adjust line height for better vertical alignment */
+            line-height: 1;
+            text-transform: uppercase; /* Uppercase for WIP */
+            box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle glow for WIP */
         }
 
         /* Modal specific styles */
         .modal-overlay {
-            position: fixed;
+            position: fixed; /* Ensure it covers the whole viewport */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Darker overlay for focus */
+            background-color: rgba(0, 0, 0, 0.9); /* Even darker overlay for full focus */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -220,66 +226,125 @@
             visibility: visible;
         }
         .modal-content {
-            position: relative;
+            position: relative; /* Needed for close button positioning */
             max-width: 900px; /* Increased max width for video */
             width: 90%; /* Ensure it's responsive */
-            padding: 1.5rem;
-            border-radius: 0.75rem;
+            padding: 2rem; /* Increased padding */
+            border-radius: 1rem; /* Consistent with other glassmorphic cards */
             transform: scale(0.95);
             transition: transform 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.05); /* Glassmorphic background */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for modals */
+        }
+        .modal-overlay.is-active .modal-content {
+            transform: scale(1);
         }
         /* Specific max-width for Instagram video modal to make it taller and narrower */
         #instagram-video-modal .modal-content {
             max-width: 400px; /* Adjust as needed for a portrait video */
         }
-        .modal-overlay.is-active .modal-content {
-            transform: scale(1);
+        #resume-modal .modal-content {
+            max-width: 850px; /* Slightly wider for resume content */
+            max-height: 90vh;
+            overflow-y: auto;
         }
         .modal-close {
             position: absolute;
             top: 1rem;
             right: 1rem;
-            font-size: 1.5rem;
-            color: #FFFFFF;
+            font-size: 1.8rem; /* Larger close button */
+            color: #F0F0F0;
             cursor: pointer;
             z-index: 1010;
             background: none;
             border: none;
             padding: 0.5rem;
             border-radius: 50%;
-            transition: background-color 0.2s ease;
+            transition: all 0.2s ease;
         }
         .modal-close:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.15); /* More noticeable hover */
+            color: #FF0000; /* Red on hover */
         }
 
         /* Animated Grid Background - Further Improved Visibility */
         .animated-grid-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
             background-image:
-                linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px), /* Increased opacity of lines */
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px); /* Increased opacity of lines */
-            background-size: 50px 50px;
-            animation: grid-movement 60s linear infinite;
-            opacity: 0.85; /* Further increased overall opacity */
-            filter: brightness(1); /* Set brightness to 1 to remove dimming if any */
+                linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), /* Slightly less opaque lines for subtlety */
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 60px 60px; /* Slightly larger grid cells */
+            animation: grid-movement 70s linear infinite; /* Slower movement for more premium feel */
+            opacity: 0.7; /* Slightly reduced overall opacity */
         }
 
         @keyframes grid-movement {
             0% { background-position: 0 0; }
-            100% { background-position: 50px 50px; }
+            100% { background-position: 60px 60px; }
         }
 
-        /* Ensure content is above the grid */
-        .header, .hero-section, .portfolio-section, .skills-section, .contact-section, .footer {
+        /* Resume Infographic Specific Styles */
+        .resume-infographic h3 {
+            font-size: 2rem; /* Larger section titles */
+            margin-bottom: 1.25rem;
+        }
+        .resume-infographic p, .resume-infographic li {
+            font-size: 1.05rem; /* Slightly larger base font size */
+            color: #D1D5DB; /* Lighter gray for better readability */
+        }
+        .resume-infographic .icon {
+            color: #FF0000; /* Pure red icon color */
+            margin-right: 0.75rem; /* More space */
+            font-size: 2.25rem; /* Larger icons */
+        }
+        .resume-infographic .section-title {
+            font-size: 3rem; /* Larger main title */
+            letter-spacing: 0.1em; /* More letter spacing */
+            text-transform: uppercase;
+        }
+        .resume-infographic .timeline-item {
             position: relative;
+            padding-left: 3rem; /* More space for timeline */
+            margin-bottom: 2.5rem;
+        }
+        .resume-infographic .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem; /* Adjust dot position */
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            background-color: #FF0000; /* Pure red dot */
+            border-radius: 50%;
             z-index: 1;
+        }
+        .resume-infographic .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 1.1rem; /* Adjust line position */
+            top: 1.5rem;
+            bottom: -0.75rem;
+            width: 3px; /* Thicker line */
+            background-color: rgba(255, 255, 255, 0.2); /* More visible line */
+        }
+        .resume-infographic .timeline-item:last-child::after {
+            display: none; /* Hide line for the last item */
+        }
+        .resume-infographic .skill-bar-container {
+            background-color: rgba(255, 255, 255, 0.15); /* Slightly more visible bar container */
+            border-radius: 9999px; /* full rounded */
+            height: 0.85rem; /* Slightly thicker bar */
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .resume-infographic .skill-bar {
+            background-color: #FF0000; /* Pure red skill bar */
+            height: 100%;
+            border-radius: 9999px;
+            width: 0%; /* Will be set by JS or inline style */
+            transition: width 1s ease-out;
         }
     </style>
 </head>
@@ -289,7 +354,7 @@
     <div class="animated-grid-background"></div>
 
     <!-- Header Section -->
-    <header class="bg-black border-b section-divider-border py-5 md:py-7 sticky top-0 z-50">
+    <header class="bg-black border-b section-divider-border py-6 md:py-8 sticky top-0 z-50">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <a href="#home" class="text-2xl md:text-3xl font-bold tracking-wider rounded-md focus:outline-none focus:ring-2 focus:ring-red-accent p-2">
                 RAKSHITH <span class="text-red-accent">|</span> EDITOR
@@ -300,12 +365,13 @@
             </button>
 
             <!-- Desktop Navigation -->
-            <nav id="desktop-nav" class="hidden md:flex space-x-6 md:space-x-10">
-                <ul class="flex space-x-6 md:space-x-10">
-                    <li><a href="#home" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Home</a></li>
-                    <li><a href="#portfolio" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Portfolio</a></li>
-                    <li><a href="#skills" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Skills</a></li>
-                    <li><a href="#contact" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Contact</a></li>
+            <nav id="desktop-nav" class="hidden md:flex space-x-8 md:space-x-12">
+                <ul class="flex space-x-8 md:space-x-12">
+                    <li><a href="#home" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Home</a></li>
+                    <li><a href="#portfolio" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Portfolio</a></li>
+                    <li><a href="#skills" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Skills</a></li>
+                    <li><a href="#contact" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Contact</a></li>
+                    <li><a href="#" id="open-resume-modal-nav" class="text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -316,6 +382,7 @@
                 <li><a href="#portfolio" class="block text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Portfolio</a></li>
                 <li><a href="#skills" class="block text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Skills</a></li>
                 <li><a href="#contact" class="block text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Contact</a></li>
+                <li><a href="#" id="open-resume-modal-mobile" class="block text-white hover:text-red-accent transition duration-300 font-medium rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-accent">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -330,9 +397,14 @@
                 <p class="text-xl md:text-2xl text-gray-300 mb-12 font-light">
                     Passionate video editor with a keen eye for detail and a commitment to transforming raw footage into captivating narratives. Specializing in high-quality post-production for diverse projects.
                 </p>
-                <a href="#portfolio" class="inline-block bg-red-accent text-black font-semibold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-accent focus:ring-opacity-75 premium-button">
-                    View My Portfolio
-                </a>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#portfolio" class="inline-block bg-red-accent text-black font-semibold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-accent focus:ring-opacity-75 premium-button">
+                        View My Portfolio
+                    </a>
+                    <a href="#" id="open-resume-modal-hero" class="inline-block border-2 border-red-accent text-red-accent font-semibold py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 hover:bg-red-accent hover:text-black focus:outline-none focus:ring-4 focus:ring-red-accent focus:ring-opacity-75 premium-button">
+                        View Resume
+                    </a>
+                </div>
             </div>
             <div class="md:w-1/2 w-full rounded-xl overflow-hidden glassmorphic-card">
                 <h3 class="text-lg font-semibold p-4 bg-black/40 text-white rounded-t-xl border-b border-white/10 flex items-center">
@@ -555,6 +627,105 @@
         </div>
     </div >
 
+    <!-- Resume Infographic Modal -->
+    <div id="resume-modal" class="modal-overlay">
+        <div class="modal-content glassmorphic-card p-8 md:p-12">
+            <button id="close-resume-modal" class="modal-close">
+                &times;
+            </button>
+            <div class="resume-infographic text-left">
+                <h2 class="section-title text-red-accent mb-10">Rakshith's <span class="text-white">Resume</span></h2>
+
+                <!-- Personal Information -->
+                <div class="mb-8 p-6 glassmorphic-card">
+                    <h3 class="flex items-center mb-4"><i class="fas fa-user icon text-2xl"></i> Personal Information</h3>
+                    <p class="mb-2"><span class="font-semibold">Name:</span> Rakshith</p>
+                    <p class="mb-2"><span class="font-semibold">Title:</span> Video Editor</p>
+                    <p class="mb-2"><span class="font-semibold">Experience:</span> 0 Year 8 Months</p>
+                    <p class="mb-2"><span class="font-semibold">City:</span> Bengaluru</p>
+                    <p class="mb-2"><span class="font-semibold">Country:</span> INDIA</p>
+                    <p class="mb-2"><span class="font-semibold">Languages:</span> English, Kannada, Hindi</p>
+                    <p class="mb-2"><span class="font-semibold">Email:</span> rakshith4599@gmail.com</p>
+                    <p class="mb-2"><span class="font-semibold">Phone:</span> (+91) 7349461794</p>
+                    <p><span class="font-semibold">Portfolio:</span> <a href="https://rakshith0908.github.io/portfolio" target="_blank" class="text-blue-400 hover:underline">rakshith0908.github.io/portfolio</a></p>
+                </div>
+
+                <!-- Profile Summary -->
+                <div class="mb-8 p-6 glassmorphic-card">
+                    <h3 class="flex items-center mb-4"><i class="fas fa-file-alt icon text-2xl"></i> Profile Summary</h3>
+                    <p class="text-gray-200">
+                        Working as a video editor at Terrabytes. Proficient in DaVinci Resolve and After Effects, with a passion for transforming raw footage into captivating narratives.
+                    </p>
+                </div>
+
+                <!-- Key Skills -->
+                <div class="mb-8 p-6 glassmorphic-card">
+                    <h3 class="flex items-center mb-4"><i class="fas fa-tools icon text-2xl"></i> Key Skills</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <p class="font-semibold">Create Storyboards</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">After Effects</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 95%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Davinci Resolve</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 95%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Storyboarding</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 85%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Editing</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 90%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Video Editing</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 92%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Drawing</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 80%;"></div></div>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Story Writing</p>
+                            <div class="skill-bar-container"><div class="skill-bar" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="mb-8 p-6 glassmorphic-card">
+                    <h3 class="flex items-center mb-4"><i class="fas fa-briefcase icon text-2xl"></i> Work Experience</h3>
+                    <div class="timeline-item">
+                        <p class="font-semibold text-lg">Video Editor</p>
+                        <p class="text-gray-300">Terrabytes</p>
+                        <p class="text-gray-400 text-sm">Oct 2024 - Present</p>
+                        <p class="text-gray-200 mt-2">Working as a video editor at Terrabytes, utilizing DaVinci Resolve and After Effects for various projects.</p>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="p-6 glassmorphic-card">
+                    <h3 class="flex items-center mb-4"><i class="fas fa-graduation-cap icon text-2xl"></i> Education</h3>
+                    <div class="timeline-item">
+                        <p class="font-semibold text-lg">Anivfx</p>
+                        <p class="text-gray-300">Arena Animation Jayanagar</p>
+                        <p class="text-gray-400 text-sm">2024</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="font-semibold text-lg">10th Grade</p>
+                        <p class="text-gray-300">Karnataka, English</p>
+                        <p class="text-gray-400 text-sm">2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Get elements for Short Film Video Modal
         const openShortFilmVideoModalBtn = document.getElementById('open-short-film-video-modal');
@@ -578,6 +749,13 @@
         const instagramVideoPlayer = document.getElementById('instagram-video-player');
         const instagramPreviewContainer = document.getElementById('instagram-preview-container'); // Get the preview container
 
+        // Get elements for Resume Modal
+        const openResumeModalHeroBtn = document.getElementById('open-resume-modal-hero');
+        const openResumeModalNavBtn = document.getElementById('open-resume-modal-nav');
+        const openResumeModalMobileBtn = document.getElementById('open-resume-modal-mobile');
+        const resumeModal = document.getElementById('resume-modal');
+        const closeResumeModalBtn = document.getElementById('close-resume-modal');
+
         // Get elements for Mobile Navigation
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const desktopNav = document.getElementById('desktop-nav');
@@ -589,36 +767,61 @@
         const instagramVideoUrl = "https://rakshith0908.github.io/portfolio/insta.mp4"; // Updated Instagram video URL
 
         // Function to open a generic modal
-        function openVideoModal(modalElement, videoPlayerElement, videoUrl) {
-            videoPlayerElement.src = videoUrl; // Set video source
+        function openModal(modalElement, videoPlayerElement = null, videoUrl = null) {
+            console.log('Attempting to open modal:', modalElement.id); // Debug log
+            if (videoPlayerElement && videoUrl) {
+                videoPlayerElement.src = videoUrl; // Set video source
+                videoPlayerElement.load(); // Load the video
+                videoPlayerElement.play().catch(error => {
+                    console.error("Video autoplay prevented:", error);
+                });
+            }
             modalElement.classList.add('is-active'); // Show modal
-            videoPlayerElement.load(); // Load the video
-            videoPlayerElement.play().catch(error => {
-                console.error("Video autoplay prevented:", error);
-            });
+            document.body.style.overflow = 'hidden'; // Prevent scrolling on body
+
+            // Trigger skill bar animations if resume modal is opened
+            if (modalElement.id === 'resume-modal') {
+                console.log('Triggering skill bar animations.'); // Debug log
+                document.querySelectorAll('.resume-infographic .skill-bar').forEach(bar => {
+                    const width = bar.style.width; // Get the target width
+                    bar.style.width = '0%'; // Reset to 0
+                    // Use a small delay to ensure the reset takes effect before animation
+                    setTimeout(() => {
+                        bar.style.width = width; // Animate to target width
+                    }, 50);
+                });
+            }
         }
 
         // Function to close a generic modal
-        function closeVideoModal(modalElement, videoPlayerElement) {
+        function closeModal(modalElement, videoPlayerElement = null) {
+            console.log('Attempting to close modal:', modalElement.id); // Debug log
             modalElement.classList.remove('is-active'); // Hide modal
-            videoPlayerElement.pause(); // Pause video
-            videoPlayerElement.currentTime = 0; // Reset video to beginning
-            videoPlayerElement.src = ''; // Clear video source
-            videoPlayerElement.load(); // Unload the video to release resources
+            if (videoPlayerElement) {
+                videoPlayerElement.pause(); // Pause video
+                videoPlayerElement.currentTime = 0; // Reset video to beginning
+                videoPlayerElement.src = ''; // Clear video source
+                videoPlayerElement.load(); // Unload the video to release resources
+            }
+            document.body.style.overflow = ''; // Restore scrolling on body
         }
 
         // Event listener for opening Short Film Video Modal (from "Watch Video" link)
         if (openShortFilmVideoModalBtn) {
+            console.log('Short Film Video Modal button found.'); // Debug log
             openShortFilmVideoModalBtn.addEventListener('click', (e) => {
                 e.preventDefault(); // Prevent default link behavior
-                openVideoModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
+                openModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
             });
+        } else {
+            console.log('Short Film Video Modal button NOT found.'); // Debug log
         }
 
         // Event listener for opening Short Film Video Modal (from clicking the preview)
         if (shortFilmPreviewContainer) {
+            console.log('Short Film Preview Container found.'); // Debug log
             shortFilmPreviewContainer.addEventListener('click', () => {
-                openVideoModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
+                openModal(shortFilmVideoModal, shortFilmVideoPlayer, shortFilmVideoUrl);
             });
             // Handle hover for preview video
             const shortFilmPreviewVideo = shortFilmPreviewContainer.querySelector('video');
@@ -631,20 +834,26 @@
                     shortFilmPreviewVideo.currentTime = 0; // Reset to beginning
                 });
             }
+        } else {
+            console.log('Short Film Preview Container NOT found.'); // Debug log
         }
 
         // Event listener for opening Wedding Video Modal (from "Watch Video" link)
         if (openWeddingVideoModalBtn) {
+            console.log('Wedding Video Modal button found.'); // Debug log
             openWeddingVideoModalBtn.addEventListener('click', (e) => {
                 e.preventDefault(); // Prevent default link behavior
-                openVideoModal(weddingVideoModal, weddingVideoPlayer, weddingVideoUrl);
+                openModal(weddingVideoModal, weddingVideoPlayer, weddingVideoUrl);
             });
+        } else {
+            console.log('Wedding Video Modal button NOT found.'); // Debug log
         }
 
         // Event listener for opening Wedding Video Modal (from clicking the preview)
         if (weddingPreviewContainer) {
+            console.log('Wedding Preview Container found.'); // Debug log
             weddingPreviewContainer.addEventListener('click', () => {
-                openVideoModal(weddingVideoModal, weddingVideoPlayer, weddingVideoUrl);
+                openModal(weddingVideoModal, weddingVideoPlayer, weddingVideoUrl);
             });
             // Handle hover for preview video
             const weddingPreviewVideo = weddingPreviewContainer.querySelector('video');
@@ -657,21 +866,27 @@
                     weddingPreviewVideo.currentTime = 0; // Reset to beginning
                 });
             }
+        } else {
+            console.log('Wedding Preview Container NOT found.'); // Debug log
         }
 
 
         // Event listener for opening Instagram Video Modal (from "Watch Video" link)
         if (openInstagramVideoModalBtn) {
+            console.log('Instagram Video Modal button found.'); // Debug log
             openInstagramVideoModalBtn.addEventListener('click', (e) => {
                 e.preventDefault(); // Prevent default link behavior
-                openVideoModal(instagramVideoModal, instagramVideoPlayer, instagramVideoUrl);
+                openModal(instagramVideoModal, instagramVideoPlayer, instagramVideoUrl);
             });
+        } else {
+            console.log('Instagram Video Modal button NOT found.'); // Debug log
         }
 
         // Event listener for opening Instagram Video Modal (from clicking the preview)
         if (instagramPreviewContainer) {
+            console.log('Instagram Preview Container found.'); // Debug log
             instagramPreviewContainer.addEventListener('click', () => {
-                openVideoModal(instagramVideoModal, instagramVideoPlayer, instagramVideoUrl);
+                openModal(instagramVideoModal, instagramVideoPlayer, instagramVideoUrl);
             });
             // Handle hover for preview video
             const instagramPreviewVideo = instagramPreviewContainer.querySelector('video');
@@ -684,40 +899,85 @@
                     instagramPreviewVideo.currentTime = 0; // Reset to beginning
                 });
             }
+        } else {
+            console.log('Instagram Preview Container NOT found.'); // Debug log
         }
 
         // Event listeners for closing Short Film Video Modal
         if (closeShortFilmVideoModalBtn) {
-            closeShortFilmVideoModalBtn.addEventListener('click', () => closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer));
+            closeShortFilmVideoModalBtn.addEventListener('click', () => closeModal(shortFilmVideoModal, shortFilmVideoPlayer));
         }
         if (shortFilmVideoModal) {
             shortFilmVideoModal.addEventListener('click', (e) => {
                 if (e.target === shortFilmVideoModal) {
-                    closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer);
+                    closeModal(shortFilmVideoModal, shortFilmVideoPlayer);
                 }
             });
         }
 
         // Event listeners for closing Wedding Video Modal
         if (closeWeddingVideoModalBtn) {
-            closeWeddingVideoModalBtn.addEventListener('click', () => closeVideoModal(weddingVideoModal, weddingVideoPlayer));
+            closeWeddingVideoModalBtn.addEventListener('click', () => closeModal(weddingVideoModal, weddingVideoPlayer));
         }
         if (weddingVideoModal) {
             weddingVideoModal.addEventListener('click', (e) => {
                 if (e.target === weddingVideoModal) {
-                    closeVideoModal(weddingVideoModal, weddingVideoPlayer);
+                    closeModal(weddingVideoModal, weddingVideoPlayer);
                 }
             });
         }
 
         // Event listeners for closing Instagram Video Modal
         if (closeInstagramVideoModalBtn) {
-            closeInstagramVideoModalBtn.addEventListener('click', () => closeVideoModal(instagramVideoModal, instagramVideoPlayer));
+            closeInstagramVideoModalBtn.addEventListener('click', () => closeModal(instagramVideoModal, instagramVideoPlayer));
         }
         if (instagramVideoModal) {
             instagramVideoModal.addEventListener('click', (e) => {
                 if (e.target === instagramVideoModal) {
-                    closeVideoModal(instagramVideoModal, instagramVideoPlayer);
+                    closeModal(instagramVideoModal, instagramVideoPlayer);
+                }
+            });
+        }
+
+        // Event listeners for opening Resume Modal
+        if (openResumeModalHeroBtn) {
+            console.log('Resume Modal Hero button found.'); // Debug log
+            openResumeModalHeroBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal(resumeModal);
+            });
+        } else {
+            console.log('Resume Modal Hero button NOT found.'); // Debug log
+        }
+        if (openResumeModalNavBtn) {
+            console.log('Resume Modal Nav button found.'); // Debug log
+            openResumeModalNavBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeMobileMenu(); // Close mobile menu if open
+                openModal(resumeModal);
+            });
+        } else {
+            console.log('Resume Modal Nav button NOT found.'); // Debug log
+        }
+        if (openResumeModalMobileBtn) {
+            console.log('Resume Modal Mobile button found.'); // Debug log
+            openResumeModalMobileBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeMobileMenu(); // Close mobile menu if open
+                openModal(resumeModal);
+            });
+        } else {
+            console.log('Resume Modal Mobile button NOT found.'); // Debug log
+        }
+
+        // Event listeners for closing Resume Modal
+        if (closeResumeModalBtn) {
+            closeResumeModalBtn.addEventListener('click', () => closeModal(resumeModal));
+        }
+        if (resumeModal) {
+            resumeModal.addEventListener('click', (e) => {
+                if (e.target === resumeModal) {
+                    closeModal(resumeModal);
                 }
             });
         }
@@ -726,33 +986,43 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 if (shortFilmVideoModal.classList.contains('is-active')) {
-                    closeVideoModal(shortFilmVideoModal, shortFilmVideoPlayer);
+                    closeModal(shortFilmVideoModal, shortFilmVideoPlayer);
                 }
                 if (weddingVideoModal.classList.contains('is-active')) {
-                    closeVideoModal(weddingVideoModal, weddingVideoPlayer);
+                    closeModal(weddingVideoModal, weddingVideoPlayer);
                 }
                 if (instagramVideoModal.classList.contains('is-active')) {
-                    closeVideoModal(instagramVideoModal, instagramVideoPlayer);
+                    closeModal(instagramVideoModal, instagramVideoPlayer);
+                }
+                if (resumeModal.classList.contains('is-active')) {
+                    closeModal(resumeModal);
                 }
             }
         });
 
         // Mobile Menu Toggle Logic
+        function closeMobileMenu() {
+            if (mobileNav.classList.contains('flex')) {
+                mobileNav.classList.add('hidden');
+                mobileNav.classList.remove('flex');
+            }
+        }
+
         if (mobileMenuButton && mobileNav && desktopNav) {
+            console.log('Mobile menu elements found.'); // Debug log
             mobileMenuButton.addEventListener('click', () => {
                 mobileNav.classList.toggle('hidden');
                 mobileNav.classList.toggle('flex'); // Add flex to make it a column
-                // Optionally hide desktop nav on mobile menu open (though Tailwind classes handle this too)
-                // desktopNav.classList.toggle('hidden');
             });
 
             // Close mobile menu when a link is clicked
             mobileNav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
-                    mobileNav.classList.add('hidden');
-                    mobileNav.classList.remove('flex');
+                    closeMobileMenu();
                 });
             });
+        } else {
+            console.log('Mobile menu elements NOT found or incomplete.'); // Debug log
         }
     </script>
 </body>
