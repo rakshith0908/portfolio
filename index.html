@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakshith | The Editor's Desk</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="The interactive portfolio of Rakshith, a professional cinematic video editor, colorist, and VFX artist. Explore a showcase of projects in a unique, immersive experience.">
-    <meta name="keywords" content="Rakshith, Video Editor, Colorist, VFX Artist, Post-production, Cinematic Editing, Film Editor, Portfolio, DaVinci Resolve, After Effects, Premiere Pro, Timeline UI">
+    <!-- =================================================================== -->
+    <!-- SEO & METADATA (ENHANCED FOR RANKING) -->
+    <!-- =================================================================== -->
+    <title>Rakshith | Cinematic Editor, Colorist & VFX Artist</title>
     <meta name="author" content="Rakshith">
-
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta name="description" content="Welcome to the portfolio of Rakshith, a freelance cinematic video editor, colorist, and VFX artist based in India. Specializing in DaVinci Resolve and Adobe Creative Suite to bring stories to life.">
+    <meta name="keywords" content="Rakshith, Freelance Video Editor, Cinematic Colorist, VFX Artist India, DaVinci Resolve Editor, Post-production Services, Film Editor Portfolio, Wedding Video Editing, Music Video Editor, Adobe Premiere Pro, After Effects Compositing, Cinematic Storytelling">
+    
+    <!-- Open Graph / Facebook / WhatsApp (FIXED & EXPANDED) -->
+    <!-- Note: Replace the placeholder image with a direct link to your own 1200x630px image. -->
+    <meta property="og:title" content="Rakshith | The Interactive Editor's Desk">
+    <meta property="og:description" content="A professional cinematic video editor, colorist, and VFX artist. Explore a portfolio of creative work.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rakshith0908.github.io/portfolio/">
-    <meta property="og:title" content="Rakshith | The Interactive Editor's Desk">
-    <meta property="og:description" content="A professional cinematic video editor, colorist, and VFX artist.">
+    <meta property="og:site_name" content="Rakshith's Portfolio">
     <meta property="og:image" content="https://rakshith0908.github.io/portfolio/opengraph.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://rakshith0908.github.io/portfolio/">
-    <meta property="twitter:title" content="Rakshith | The Interactive Editor's Desk">
-    <meta property="twitter:description" content="A professional cinematic video editor, colorist, and VFX artist.">
-    <meta property="twitter:image" content="https://rakshith0908.github.io/portfolio/opengraph.png">
+    <!-- Twitter Card (FIXED & EXPANDED) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rakshith | The Interactive Editor's Desk">
+    <meta name="twitter:description" content="A professional cinematic video editor, colorist, and VFX artist.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/1a1a1a/D2B48C?text=Rakshith+%7C+Editor">
+    <meta name="twitter:url" content="https://rakshith0908.github.io/portfolio/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,99 +45,156 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- JSON-LD Structured Data -->
+    <!-- =================================================================== -->
+    <!-- JSON-LD STRUCTURED DATA (SIGNIFICANTLY IMPROVED FOR SEO) -->
+    <!-- =================================================================== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rakshith",
-      "url": "https://rakshith0908.github.io/portfolio/",
-      "jobTitle": "Cinematic Editor and VFX Artist",
-      "knowsAbout": ["Video Editing", "Color Grading", "VFX", "Compositing", "Motion Graphics", "Post-production"],
-      "sameAs": [
-        "https://linkedin.com/in/rakshithprofile",
-        "https://vimeo.com/rakshithprofile"
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Rakshith",
+          "url": "https://rakshith0908.github.io/portfolio/",
+          "jobTitle": "Cinematic Editor and VFX Artist",
+          "knowsAbout": ["Video Editing", "Color Grading", "VFX", "Compositing", "Motion Graphics", "Post-production", "DaVinci Resolve", "Adobe Creative Suite", "Cinematic Storytelling"],
+          "sameAs": [
+            "https://linkedin.com/in/rakshithprofile",
+            "https://vimeo.com/rakshithprofile"
+          ],
+          "image": "https://placehold.co/500x500/1a1a1a/D2B48C?text=Rakshith"
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://rakshith0908.github.io/portfolio/",
+          "name": "Rakshith | The Editor's Desk",
+          "author": {
+            "@id": "#person"
+          },
+          "description": "The interactive portfolio of Rakshith, a professional cinematic video editor, colorist, and VFX artist."
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "Rakshith Post-Production",
+          "serviceType": "Video Post-Production",
+          "provider": {
+            "@id": "#person"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "hasOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cinematic Video Editing"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Professional Color Grading"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "VFX and Compositing"
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
 
     <style>
-        :root { --mouse-x: 50%; --mouse-y: 50%; }
+        :root { --mouse-x: 50%; --mouse-y: 50%; --header-height: 80px; }
         body {
             font-family: 'Source Code Pro', monospace;
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: #D5D5D5;
             background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIASURBVHjaYmR4eJgBNDEwMDCwAII/QDwG4g9AvA7iFwA5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/0A8CIg/A/EzIH4KxB+B+AMQPwTiTwC5GSCpB8R/A/FrIP4MxE9A/ArEX4FYDMS/gfgzEH8G4s9A/BmMfwDxC0AORgZGBgYWFgZGRgYGFgZGRgYGFgZGRgZmBgaG/wMANf4LwMiAAAMA3sA4dJ2L2BwAAAAASUVORK5CYII=');
-            scroll-behavior: smooth;
             overflow-x: hidden;
             cursor: default;
+        }
+        main {
+            padding-top: var(--header-height); /* MOBILE NAVBAR FIX: Prevents overlap */
         }
         .font-serif { font-family: 'Cormorant Garamond', serif; }
         .font-mono { font-family: 'Source Code Pro', monospace; }
         .text-sepia { color: #D2B48C; }
         .bg-sepia { background-color: #D2B48C; }
 
-        /* --- Thematic Main Scrollbar --- */
-        body::-webkit-scrollbar { width: 15px; }
-        body::-webkit-scrollbar-track { background-color: #1a1a1a; background-image: repeating-linear-gradient(to right, #1a1a1a, #1a1a1a 5px, #333 5px, #333 6px, #1a1a1a 6px, #1a1a1a 9px, #333 9px, #333 10px); }
-        body::-webkit-scrollbar-thumb { background-color: #D2B48C; border-radius: 2px; border: 2px solid #1a1a1a; }
+        body::-webkit-scrollbar { width: 12px; }
+        body::-webkit-scrollbar-track { background-color: #121212; }
+        body::-webkit-scrollbar-thumb { background-color: #D2B48C; border-radius: 6px; border: 3px solid #121212; }
 
+        /* CREATIVE: Spotlight cursor effect */
         body::before {
             content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255,255,220,0.07) 0%, transparent 35%);
+            background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(210, 180, 140, 0.06) 0%, transparent 30%);
             pointer-events: none; z-index: 0; transition: background 0.1s ease-out;
         }
 
         #preloader {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #1a1a1a; z-index: 9999; display: flex;
+            background-color: #121212; z-index: 9999; display: flex;
             align-items: center; justify-content: center;
             font-family: 'Cormorant Garamond', serif; color: #F5F5DC;
-            font-size: 25vw; background-image: radial-gradient(circle, #444 1px, transparent 1px);
-            background-size: 8px 8px; animation: grain 8s steps(10) infinite;
+            font-size: 25vw;
         }
         #preloader.hidden { opacity: 0; visibility: hidden; transition: opacity 0.5s ease-out, visibility 0.5s ease-out 0.5s; }
-        @keyframes grain { 0%, 100% { transform: translate(0, 0) } 10% { transform: translate(-1%, -2%) } 20% { transform: translate(1%, 1%) } 30% { transform: translate(-2%, 2%) } 40% { transform: translate(2%, -1%) } 50% { transform: translate(-1%, 2%) } 60% { transform: translate(1%, 0) } 70% { transform: translate(0, 1%) } 80% { transform: translate(-2%, -1%) } 90% { transform: translate(1%, 2%) } }
         .preloader-text { animation: flicker 1.5s infinite alternate; }
-        @keyframes flicker { 0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #D2B48C, 0 0 80px #D2B48C; } 20%, 24%, 55% { text-shadow: none; } }
+        @keyframes flicker { 0%, 18%, 22%, 25%, 53%, 57%, 100% { text-shadow: 0 0 5px #fff, 0 0 12px #fff, 0 0 20px #D2B48C, 0 0 45px #D2B48C; } 20%, 24%, 55% { text-shadow: none; } }
 
         .content-wrapper { position: relative; z-index: 1; }
         .section { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
         .section.visible { opacity: 1; transform: translateY(0); }
 
-        /* --- Vertical Timeline & Playhead --- */
-        #timeline-track { position: fixed; left: 30px; top: 0; height: 100%; width: 2px; background-color: rgba(255, 255, 255, 0.1); z-index: 100; }
-        #playhead { position: absolute; left: 50%; transform: translateX(-50%); width: 30px; height: 2px; background-color: #D2B48C; box-shadow: 0 0 10px #D2B48C; }
+        #timeline-track { position: fixed; left: 15px; top: 0; height: 100%; width: 2px; background-color: rgba(255, 255, 255, 0.08); z-index: 100; }
+        #playhead { position: absolute; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background-color: #D2B48C; box-shadow: 0 0 12px #D2B48C; }
         
-        /* --- UI Elements --- */
-        .audio-waveform { height: 50px; display: flex; align-items: center; gap: 4px; pointer-events: none; }
-        .bar { background-color: rgba(210, 180, 140, 0.2); width: 4px; animation: wave 1.5s infinite ease-in-out alternate; }
-        @keyframes wave { from { height: 5%; } to { height: 100%; } }
-        .section-divider { text-align: center; padding: 4rem 0; font-family: 'Source Code Pro', monospace; color: rgba(255,255,255,0.2); letter-spacing: 0.2em; }
-        .cursor-tracer { position: fixed; width: 8px; height: 8px; background: #D2B48C; border-radius: 50%; z-index: 1000; pointer-events: none; transform: translate(-50%, -50%); transition: transform 0.1s ease-out; }
+        .section-divider {
+            text-align: center; padding: 4rem 0; font-family: 'Source Code Pro', monospace; color: rgba(255,255,255,0.2); letter-spacing: 0.2em;
+            display: flex; align-items: center; justify-content: center; gap: 1em;
+        }
+        .section-divider::before, .section-divider::after {
+            content: ''; height: 1px; width: 40px; background: rgba(255,255,255,0.1);
+        }
+        .cursor-tracer { position: fixed; width: 24px; height: 24px; border: 1px solid #D2B48C; border-radius: 50%; z-index: 1000; pointer-events: none; transform: translate(-50%, -50%); transition: transform 0.15s ease-out, width 0.2s, height 0.2s; }
+        .cursor-tracer.active { transform: translate(-50%, -50%) scale(1.5); background-color: rgba(210, 180, 140, 0.2); }
 
-        /* --- Film Strip --- */
-        #film-strip-container { padding: 40px 0; overflow-x: auto; cursor: grab; user-select: none; position: relative; background: repeating-linear-gradient(#1a1a1a, #1a1a1a 15px, #333 15px, #333 16px, #1a1a1a 16px, #1a1a1a 35px, #333 35px, #333 36px); }
+        #film-strip-container {
+            padding: 40px 0; overflow-x: auto; cursor: grab; user-select: none; position: relative;
+            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
         #film-strip-container::-webkit-scrollbar { height: 12px; }
-        #film-strip-container::-webkit-scrollbar-track { background: #111; border-top: 1px solid #444; border-bottom: 1px solid #444; }
+        #film-strip-container::-webkit-scrollbar-track { background: #111; }
         #film-strip-container::-webkit-scrollbar-thumb { background-color: #D2B48C; border-radius: 6px; border: 2px solid #111; }
         #film-strip-container.grabbing { cursor: grabbing; }
         #film-strip { display: inline-flex; gap: 50px; padding: 0 50px; position: relative; }
-        .film-frame { flex: 0 0 auto; width: 70vw; max-width: 500px; background-color: #111; border: 1px solid #444; padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; }
-        .video-preview-container { width: 100%; padding-bottom: 56.25%; position: relative; background-color: #000; }
-        .video-preview { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+        .film-frame { flex: 0 0 auto; width: 70vw; max-width: 500px; background-color: #181818; border: 1px solid #333; padding: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .film-frame:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.6); }
+        .video-preview-container { width: 100%; padding-bottom: 56.25%; position: relative; background-color: #000; overflow: hidden; }
+        .video-preview { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .film-frame:hover .video-preview { transform: scale(1.05); }
         
-        /* --- Editor Notes & Secret Element --- */
         .editor-note { position: absolute; z-index: 10; cursor: help; }
         .note-text { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%) translateY(-10px); background-color: #F5F5DC; color: #333; padding: 5px 10px; font-family: 'Cormorant Garamond', serif; font-weight: 700; white-space: nowrap; border-radius: 2px; box-shadow: 2px 2px 5px rgba(0,0,0,0.3); opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; }
         .editor-note:hover .note-text { opacity: 1; visibility: visible; }
         .tape { width: 80px; height: 25px; background-color: rgba(210, 180, 140, 0.4); backdrop-filter: blur(2px); border-left: 1px solid rgba(255,255,255,0.2); border-right: 1px solid rgba(255,255,255,0.2); }
-        #secret-element { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='f1' x='-50%25' y='-50%25' width='200%25' height='200%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.1' numOctaves='3' result='T'/%3E%3CfeColorMatrix in='T' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.5 0' result='T2'/%3E%3CfeComposite operator='in' in='T2' in2='SourceGraphic' result='T3'/%3E%3CfeGaussianBlur in='T3' stdDeviation='1.5'/%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23f1)'%3E%3Cpath d='M50 10 C 80 10, 90 40, 90 50 S 80 90, 50 90 S 10 80, 10 50 S 20 10, 50 10' fill='%234a2a0a'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; cursor: pointer; z-index: 50; opacity: 0.5; transition: opacity 0.3s ease, transform 0.3s ease; }
-        #secret-element:hover { opacity: 1; transform: scale(1.1); }
         
-        /* --- Modals & Parallax --- */
-        .modal { background-color: rgba(0,0,0,0.85); backdrop-filter: blur(5px); }
-        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background-color: #000; }
+        #secret-element { position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23D2B48C'%3E%3Cpath d='M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-1 3h2v6h-2V7zm0 8h2v2h-2v-2z'/%3E%3C/svg%3E"); background-size: cover; cursor: pointer; z-index: 50; opacity: 0.4; transition: opacity 0.3s ease, transform 0.3s ease; }
+        #secret-element:hover { opacity: 1; transform: scale(1.1) rotate(15deg); }
+        
+        .modal { background-color: rgba(0,0,0,0.85); backdrop-filter: blur(8px); }
+        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background-color: #000; border-radius: 4px; overflow: hidden; }
         .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         .parallax { transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
     </style>
@@ -140,24 +207,26 @@
     <div id="secret-element" title="What's this?"></div>
 
     <div class="content-wrapper">
-        <header class="fixed top-0 left-0 w-full z-50 p-6 md:p-8">
-            <div class="flex justify-between items-center">
-                <a href="#" class="font-serif text-2xl tracking-widest text-white">RAKSHITH</a>
-                <a href="#contact" class="font-mono text-sm border border-gray-500 text-gray-300 px-4 py-2 hover:bg-white hover:text-black transition-colors duration-300">CONTACT</a>
+        <!-- HEADER & NAVBAR (IMPROVED FOR RESPONSIVENESS) -->
+        <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="font-serif text-2xl tracking-widest text-white hover:text-sepia transition-colors">RAKSHITH</a>
+                <nav>
+                    <a href="#contact" class="font-mono text-sm border border-gray-500 text-gray-300 px-4 py-2 rounded-sm hover:bg-white hover:text-black transition-colors duration-300">CONTACT</a>
+                </nav>
             </div>
         </header>
 
-        <main class="pt-32 md:pt-48 pb-24">
-            <section id="hero" class="text-center min-h-[70vh] flex flex-col justify-center items-center section container mx-auto px-6">
-                <div class="audio-waveform w-full absolute top-24 left-0"></div>
-                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight">Story in Every Frame</h1>
-                <p class="font-mono text-sepia max-w-2xl mx-auto mt-6 text-base md:text-lg">
+        <main>
+            <section id="hero" class="text-center min-h-[80vh] flex flex-col justify-center items-center section container mx-auto px-6 relative">
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-tight z-10">Story in Every Frame</h1>
+                <p class="font-mono text-sepia max-w-2xl mx-auto mt-6 text-base md:text-lg z-10">
                     A post-production artist obsessed with the details. I blend classic storytelling with modern technique to create unforgettable visual narratives.
                 </p>
-                <div class="audio-waveform w-full absolute bottom-0 left-0"></div>
+                <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(210,180,140,0.15),rgba(255,255,255,0))] opacity-50"></div>
             </section>
 
-            <div class="section-divider">[ SEQ. 01: INTRO / OUT ]</div>
+            <div class="section-divider">[ SEQ. 01: INTRO ]</div>
 
             <section id="services" class="my-24 md:my-40 section container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -165,15 +234,15 @@
                     <p class="font-mono text-gray-500 mt-2">// My post-production pipeline</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                    <div class="border-t border-gray-700 pt-6">
+                    <div class="border-t-2 border-gray-800 pt-6 transition-all duration-300 hover:border-sepia hover:bg-white/5 p-4 rounded-md">
                         <div class="flex justify-between items-center mb-4"><h3 class="font-serif text-2xl text-sepia">Editing</h3><i class="fas fa-cut text-2xl text-gray-600"></i></div>
                         <p class="text-gray-400">Building the narrative backbone. Focusing on rhythm, pacing, and performance to create a compelling emotional journey.</p>
                     </div>
-                    <div class="border-t border-gray-700 pt-6">
+                    <div class="border-t-2 border-gray-800 pt-6 transition-all duration-300 hover:border-sepia hover:bg-white/5 p-4 rounded-md">
                         <div class="flex justify-between items-center mb-4"><h3 class="font-serif text-2xl text-sepia">Coloring</h3><i class="fas fa-palette text-2xl text-gray-600"></i></div>
                         <p class="text-gray-400">Painting with light. Crafting the mood, tone, and atmosphere of every frame to elevate the visual language of the film.</p>
                     </div>
-                    <div class="border-t border-gray-700 pt-6">
+                    <div class="border-t-2 border-gray-800 pt-6 transition-all duration-300 hover:border-sepia hover:bg-white/5 p-4 rounded-md">
                         <div class="flex justify-between items-center mb-4"><h3 class="font-serif text-2xl text-sepia">Compositing</h3><i class="fas fa-wand-magic-sparkles text-2xl text-gray-600"></i></div>
                         <p class="text-gray-400">Enhancing reality. From invisible clean-up to complex effects, seamlessly integrating elements to serve the vision.</p>
                     </div>
@@ -183,35 +252,75 @@
                 </p>
             </section>
 
-            <div class="section-divider">[ SEQ. 02: SERVICES / OUT ]</div>
+            <div class="section-divider">[ SEQ. 02: THE CUTTING ROOM ]</div>
 
             <section id="portfolio" class="my-24 md:my-40 section">
                  <div class="text-center mb-16 container mx-auto px-6">
-                    <h2 class="font-serif text-4xl md:text-5xl text-white">The Cutting Room</h2>
-                    <p class="font-mono text-gray-500 mt-2">// Drag or scroll to explore</p>
+                    <h2 class="font-serif text-4xl md:text-5xl text-white">Selected Works</h2>
+                    <p class="font-mono text-gray-500 mt-2">// Drag or scroll to explore the timeline</p>
                 </div>
 
                 <div id="film-strip-container">
                     <div id="film-strip">
-                        <div class="film-frame"><div class="sprocket-holes"></div><div class="relative video-preview-container"><video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/101010/F5F5DC?text=Project+Noir"><source src="https://rakshith0908.github.io/portfolio/short.mp4#t=0.1" type="video/mp4"></video><div class="editor-note" style="top: 20%; left: 15%; transform: rotate(-15deg);"><div class="note-text">Editing</div><div class="tape"></div></div><div class="editor-note" style="bottom: 15%; right: 10%; transform: rotate(10deg);"><div class="note-text">Color Grading</div><div class="tape"></div></div><button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/short.mp4"></button></div><div class="p-4 pt-6"><h3 class="font-serif text-2xl text-white">A Study in Suspense</h3><p class="font-mono text-sepia text-sm mt-1">Inspired by classic noir, focusing on tension and high-contrast, black-and-white grading.</p></div></div>
-                        <div class="film-frame"><div class="sprocket-holes"></div><div class="relative video-preview-container"><video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/181510/D2B48C?text=Project+Arrakis"><source src="https://rakshith0908.github.io/portfolio/wedding.mp4#t=0.1" type="video/mp4"></video><div class="editor-note" style="top: 15%; right: 15%; transform: rotate(5deg);"><div class="note-text">VFX & Compositing</div><div class="tape"></div></div><button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/wedding.mp4"></button></div><div class="p-4 pt-6"><h3 class="font-serif text-2xl text-white">Worlds Beyond</h3><p class="font-mono text-sepia text-sm mt-1">An atmospheric sci-fi piece featuring environmental effects and a desaturated, epic color palette.</p></div></div>
-                        <div class="film-frame"><div class="sprocket-holes"></div><div class="relative video-preview-container"><video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/101010/8B0000?text=Project+Kinetic"><source src="https://rakshith0908.github.io/portfolio/insta.mp4#t=0.1" type="video/mp4"></video><div class="editor-note" style="bottom: 20%; left: 10%; transform: rotate(-8deg);"><div class="note-text">Motion Graphics</div><div class="tape"></div></div><button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/insta.mp4"></button></div><div class="p-4 pt-6"><h3 class="font-serif text-2xl text-white">Dynamic Titles</h3><p class="font-mono text-sepia text-sm mt-1">A high-energy title sequence combining kinetic typography and stylized graphical elements.</p></div></div>
+                        <!-- Portfolio Item 1 -->
+                        <article class="film-frame" aria-label="A Study in Suspense Project">
+                            <div class="relative video-preview-container">
+                                <video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/101010/F5F5DC?text=Project+Noir" aria-label="Preview for A Study in Suspense">
+                                    <source src="https://rakshith0908.github.io/portfolio/short.mp4#t=0.1" type="video/mp4">
+                                </video>
+                                <div class="editor-note" style="top: 20%; left: 15%; transform: rotate(-15deg);"><div class="note-text">Editing</div><div class="tape"></div></div>
+                                <div class="editor-note" style="bottom: 15%; right: 10%; transform: rotate(10deg);"><div class="note-text">Color Grading</div><div class="tape"></div></div>
+                                <button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/short.mp4" aria-label="Play A Study in Suspense video"></button>
+                            </div>
+                            <div class="p-4 pt-6">
+                                <h3 class="font-serif text-2xl text-white">A Study in Suspense</h3>
+                                <p class="font-mono text-sepia text-sm mt-1">Inspired by classic noir, focusing on tension and high-contrast, black-and-white grading.</p>
+                            </div>
+                        </article>
+                        <!-- Portfolio Item 2 -->
+                        <article class="film-frame" aria-label="Worlds Beyond Project">
+                            <div class="relative video-preview-container">
+                                <video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/181510/D2B48C?text=Project+Arrakis" aria-label="Preview for Worlds Beyond">
+                                    <source src="https://rakshith0908.github.io/portfolio/wedding.mp4#t=0.1" type="video/mp4">
+                                </video>
+                                <div class="editor-note" style="top: 15%; right: 15%; transform: rotate(5deg);"><div class="note-text">VFX & Compositing</div><div class="tape"></div></div>
+                                <button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/wedding.mp4" aria-label="Play Worlds Beyond video"></button>
+                            </div>
+                            <div class="p-4 pt-6">
+                                <h3 class="font-serif text-2xl text-white">Worlds Beyond</h3>
+                                <p class="font-mono text-sepia text-sm mt-1">An atmospheric sci-fi piece featuring environmental effects and a desaturated, epic color palette.</p>
+                            </div>
+                        </article>
+                        <!-- Portfolio Item 3 -->
+                        <article class="film-frame" aria-label="Dynamic Titles Project">
+                            <div class="relative video-preview-container">
+                                <video class="video-preview" preload="metadata" muted loop playsinline poster="https://placehold.co/800x450/101010/8B0000?text=Project+Kinetic" aria-label="Preview for Dynamic Titles">
+                                    <source src="https://rakshith0908.github.io/portfolio/insta.mp4#t=0.1" type="video/mp4">
+                                </video>
+                                <div class="editor-note" style="bottom: 20%; left: 10%; transform: rotate(-8deg);"><div class="note-text">Motion Graphics</div><div class="tape"></div></div>
+                                <button class="open-video-modal absolute inset-0" data-video-url="https://rakshith0908.github.io/portfolio/insta.mp4" aria-label="Play Dynamic Titles video"></button>
+                            </div>
+                            <div class="p-4 pt-6">
+                                <h3 class="font-serif text-2xl text-white">Dynamic Titles</h3>
+                                <p class="font-mono text-sepia text-sm mt-1">A high-energy title sequence combining kinetic typography and stylized graphical elements.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
             
-            <div class="section-divider">[ SEQ. 03: WORK / OUT ]</div>
+            <div class="section-divider">[ SEQ. 03: THE EDITOR ]</div>
 
             <section id="about" class="my-24 md:my-48 section container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
                     <div class="md:w-1/2 w-full parallax" data-speed="0.9">
-                        <div class="relative bg-black p-4 border-4 border-gray-800 shadow-2xl" style="transform: rotate(-2deg);">
+                        <div class="relative bg-black p-4 border-2 border-gray-800 shadow-2xl rounded-sm" style="transform: rotate(-2deg);">
                             <div class="video-container"><video controls preload="auto" playsinline poster="https://placehold.co/800x450/111111/D2B48C?text=About+Me"><source src="https://rakshith0908.github.io/portfolio/main.mp4" type="video/mp4"></video></div>
                         </div>
                     </div>
                     <div class="md:w-1/2 parallax" data-speed="1.1">
-                        <div class="bg-black/20 p-8 border border-gray-800" style="transform: rotate(1deg);">
-                            <h3 class="font-serif text-3xl text-sepia mb-4">The Editor</h3>
+                        <div class="bg-black/20 p-8 border border-gray-800 rounded-sm" style="transform: rotate(1deg);">
+                            <h3 class="font-serif text-3xl text-sepia mb-4">About Me</h3>
                             <p class="text-gray-300 mb-4">I'm a post-production artist who lives at the intersection of storytelling and technology. My passion is to take raw footage and shape it into a cohesive, emotional narrative.</p>
                             <p class="text-gray-400">My primary toolkit is built around DaVinci Resolve, but I'm fluent in the entire Adobe Creative Suite, allowing me to bring a comprehensive and artistic approach to every project.</p>
                         </div>
@@ -220,42 +329,50 @@
             </section>
         </main>
 
-        <footer id="contact" class="pt-24 pb-12 border-t border-gray-800/50 section container mx-auto px-6">
-            <div class="text-center">
+        <footer id="contact" class="pt-24 pb-12 border-t border-gray-800/50 section bg-black/20">
+            <div class="container mx-auto px-6 text-center">
                 <h2 class="font-serif text-4xl text-white">Let's Create Together</h2>
                 <p class="font-mono text-gray-400 max-w-lg mx-auto mt-4 mb-8">Have a vision? I have the tools to bring it to life. Reach out to discuss your project.</p>
-                <a href="mailto:rakshith4599@gmail.com" class="inline-block bg-sepia text-black font-mono px-8 py-3 hover:bg-white transition-colors duration-300">rakshith4599@gmail.com</a>
-                <div class="mt-16 text-gray-600 flex justify-center space-x-6 text-xl">
-                    <a href="https://linkedin.com/in/rakshithprofile" target="_blank" class="hover:text-sepia transition-colors"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://vimeo.com/rakshithprofile" target="_blank" class="hover:text-sepia transition-colors"><i class="fab fa-vimeo-v"></i></a>
+                <a href="mailto:rakshith4599@gmail.com" class="inline-block bg-sepia text-black font-mono px-8 py-3 rounded-sm hover:bg-white transition-colors duration-300 text-lg">rakshith4599@gmail.com</a>
+                <div class="mt-16 text-gray-600 flex justify-center space-x-6 text-2xl">
+                    <a href="https://linkedin.com/in/rakshithprofile" target="_blank" rel="noopener noreferrer" class="hover:text-sepia transition-colors" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://vimeo.com/rakshithprofile" target="_blank" rel="noopener noreferrer" class="hover:text-sepia transition-colors" aria-label="Vimeo Profile"><i class="fab fa-vimeo-v"></i></a>
                 </div>
-                <p class="font-mono text-xs text-gray-700 mt-8">&copy; 2025 RAKSHITH</p>
+                <p class="font-mono text-xs text-gray-700 mt-12">&copy; 2025 RAKSHITH. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
 
-    <div id="video-modal" class="modal fixed inset-0 z-[100] flex items-center justify-center hidden p-4">
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal fixed inset-0 z-[100] flex items-center justify-center hidden p-4" role="dialog" aria-modal="true">
         <div class="absolute inset-0 bg-black/80" id="video-modal-bg"></div>
         <div class="relative w-full max-w-4xl z-10"><div class="video-container"><video id="video-player" controls preload="auto" playsinline></video></div></div>
-        <button id="close-video-modal" class="absolute top-4 right-6 text-white text-4xl z-20">&times;</button>
+        <button id="close-video-modal" class="absolute top-4 right-6 text-white text-4xl z-20" aria-label="Close video player">&times;</button>
     </div>
-    <div id="secret-modal" class="modal fixed inset-0 z-[100] flex items-center justify-center hidden p-4">
+    
+    <!-- Secret Modal -->
+    <div id="secret-modal" class="modal fixed inset-0 z-[100] flex items-center justify-center hidden p-4" role="dialog" aria-modal="true">
         <div class="absolute inset-0 bg-black/80" id="secret-modal-bg"></div>
-        <div class="relative bg-[#1a1a1a] border border-sepia text-center p-8 max-w-md w-full z-10">
+        <div class="relative bg-[#1a1a1a] border border-sepia text-center p-8 max-w-md w-full z-10 rounded-md">
             <h3 class="font-serif text-2xl text-sepia mb-4">A Note from the Editor</h3>
             <p class="font-mono text-gray-300 mb-6">You found it! This attention to detail is exactly what I bring to every project. Thanks for exploring my workspace.</p>
-            <button id="close-secret-modal" class="bg-sepia text-black font-mono px-6 py-2">CLOSE</button>
+            <button id="close-secret-modal" class="bg-sepia text-black font-mono px-6 py-2 rounded-sm" aria-label="Close this message">CLOSE</button>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // --- Preloader ---
             const preloader = document.getElementById('preloader');
             window.addEventListener('load', () => {
                 setTimeout(() => { preloader.classList.add('hidden'); }, 500);
             });
 
+            // --- Interactive Elements ---
             const cursorTracer = document.getElementById('cursor-tracer');
+            const mainHeader = document.getElementById('main-header');
+            
+            // --- Cursor and Header Effects ---
             document.body.addEventListener('mousemove', e => {
                 document.documentElement.style.setProperty('--mouse-x', (e.clientX / window.innerWidth) * 100 + '%');
                 document.documentElement.style.setProperty('--mouse-y', (e.clientY / window.innerHeight) * 100 + '%');
@@ -263,6 +380,34 @@
                 cursorTracer.style.top = e.clientY + 'px';
             });
 
+            // --- MOBILE NAVBAR FIX & SCROLL EFFECTS ---
+            const playhead = document.getElementById('playhead');
+            const parallaxEls = document.querySelectorAll('.parallax');
+            
+            window.addEventListener('scroll', () => {
+                // Change header background on scroll
+                if (window.scrollY > 50) {
+                    mainHeader.classList.add('bg-[#121212]/80', 'backdrop-blur-sm', 'shadow-lg');
+                } else {
+                    mainHeader.classList.remove('bg-[#121212]/80', 'backdrop-blur-sm', 'shadow-lg');
+                }
+
+                // Update timeline playhead
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                playhead.style.top = `${scrollPercent}%`;
+
+                // Parallax effect
+                parallaxEls.forEach(el => {
+                    const speed = parseFloat(el.dataset.speed) || 1;
+                    const rect = el.getBoundingClientRect();
+                    const y = ((rect.top - window.innerHeight) * (1 - speed)) / 10;
+                    const rotation = el.style.transform.includes('rotate') ? el.style.transform.split('rotate(')[1].split(')')[0] : '0deg';
+                    el.style.transform = `translateY(${y}px) rotate(${rotation})`;
+                });
+            }, { passive: true });
+
+
+            // --- Section Fade-in Observer ---
             const sections = document.querySelectorAll('.section');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -274,37 +419,29 @@
             }, { threshold: 0.1 });
             sections.forEach(el => observer.observe(el));
             
-            const playhead = document.getElementById('playhead');
-            const parallaxEls = document.querySelectorAll('.parallax');
-            window.addEventListener('scroll', () => {
-                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-                playhead.style.top = `${scrollPercent}%`;
-
-                parallaxEls.forEach(el => {
-                    const speed = parseFloat(el.dataset.speed) || 1;
-                    const y = (window.scrollY * (1 - speed)) / 10;
-                    el.style.transform = `translateY(${y}px) rotate(${el.style.transform.includes('rotate') ? el.style.transform.split('rotate(')[1].split(')')[0] : '0deg'})`;
-                });
-            });
-
+            // --- Film Strip Drag-to-Scroll ---
             const stripContainer = document.getElementById('film-strip-container');
-            let isDown = false;
-            let startX;
-            let scrollLeft;
+            if (stripContainer) {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
 
-            stripContainer.addEventListener('mousedown', (e) => { isDown = true; stripContainer.classList.add('grabbing'); startX = e.pageX - stripContainer.offsetLeft; scrollLeft = stripContainer.scrollLeft; });
-            stripContainer.addEventListener('mouseleave', () => { isDown = false; stripContainer.classList.remove('grabbing'); });
-            stripContainer.addEventListener('mouseup', () => { isDown = false; stripContainer.classList.remove('grabbing'); });
-            stripContainer.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - stripContainer.offsetLeft; const walk = (x - startX) * 2; stripContainer.scrollLeft = scrollLeft - walk; });
-            stripContainer.addEventListener('wheel', (e) => { if (e.deltaY === 0) return; e.preventDefault(); stripContainer.scrollLeft += e.deltaY; });
+                stripContainer.addEventListener('mousedown', (e) => { isDown = true; stripContainer.classList.add('grabbing'); startX = e.pageX - stripContainer.offsetLeft; scrollLeft = stripContainer.scrollLeft; });
+                stripContainer.addEventListener('mouseleave', () => { isDown = false; stripContainer.classList.remove('grabbing'); });
+                stripContainer.addEventListener('mouseup', () => { isDown = false; stripContainer.classList.remove('grabbing'); });
+                stripContainer.addEventListener('mousemove', (e) => { if (!isDown) return; e.preventDefault(); const x = e.pageX - stripContainer.offsetLeft; const walk = (x - startX) * 2; stripContainer.scrollLeft = scrollLeft - walk; });
+                stripContainer.addEventListener('wheel', (e) => { if (e.deltaY === 0) return; e.preventDefault(); stripContainer.scrollLeft += e.deltaY; });
+            }
 
+            // --- Video Preview Hover ---
             const videoPreviews = document.querySelectorAll('.video-preview');
             videoPreviews.forEach(video => {
                 const parent = video.closest('.video-preview-container');
-                parent.addEventListener('mouseenter', async () => { try { await video.play(); } catch (err) { /* Ignore */ } });
+                parent.addEventListener('mouseenter', async () => { try { await video.play(); } catch (err) { /* Ignore autoplay errors */ } });
                 parent.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
             });
 
+            // --- Modal Logic ---
             const videoModal = document.getElementById('video-modal');
             const videoPlayer = document.getElementById('video-player');
             const openModalButtons = document.querySelectorAll('.open-video-modal');
@@ -313,9 +450,7 @@
 
             const openVideoModal = (url) => { videoPlayer.src = url; videoModal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; videoPlayer.play().catch(e => console.error("Modal video play failed:", e)); };
             const closeVideoModal = () => { videoModal.classList.add('hidden'); if (secretModal.classList.contains('hidden')) { document.body.style.overflow = ''; } videoPlayer.pause(); videoPlayer.src = ''; };
-            openModalButtons.forEach(button => {
-                button.addEventListener('click', () => openVideoModal(button.dataset.videoUrl));
-            });
+            openModalButtons.forEach(button => button.addEventListener('click', () => openVideoModal(button.dataset.videoUrl)));
             closeModalButton.addEventListener('click', closeVideoModal);
             videoModalBg.addEventListener('click', closeVideoModal);
 
